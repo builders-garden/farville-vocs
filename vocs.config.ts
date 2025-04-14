@@ -1,4 +1,5 @@
 import { defineConfig } from "vocs";
+import { launch_url } from "./docs/constants";
 
 export default defineConfig({
   socials: [
@@ -7,8 +8,9 @@ export default defineConfig({
       link: "https://warpcast.com/~/channel/farville",
     },
   ],
-  title: "Farville",
-  //logoUrl: '/farville-logo.jpeg',
+  title: "Farville Docs",
+  logoUrl: "./farville-title.png",
+  iconUrl: "./farville-icon.png",
   sidebar: [
     {
       text: "Getting Started",
@@ -20,7 +22,48 @@ export default defineConfig({
     },
   ],
   topNav: [
-    { text: "Learn More", link: "/getting-started" },
-    { text: "Play", link: "https://warpcast.com/~/channel/farville" },
+    {
+      text: "Website",
+      link: "https://farville.farm",
+    },
+    {
+      text: "Play",
+      link: launch_url,
+    },
   ],
+  theme: {
+    variables: {
+      color: {
+        backgroundAccent: {
+          dark: "#16D63F",
+          light: "#16D63F",
+        },
+        backgroundAccentHover: {
+          dark: "#12B535",
+          light: "#12B535",
+        },
+        backgroundAccentText: {
+          dark: "#000000",
+          light: "#000000",
+        },
+        borderAccent: {
+          dark: "#16D63F",
+          light: "#16D63F",
+        },
+        textAccent: {
+          dark: "#16D63F",
+          light: "#16D63F",
+        },
+        textAccentHover: {
+          dark: "#16D63F",
+          light: "#16D63F",
+        },
+      },
+    },
+  },
+  font: {
+    default: {
+      google: "Bricolage Grotesque",
+    },
+  },
 });

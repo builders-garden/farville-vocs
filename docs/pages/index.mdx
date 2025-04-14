@@ -1,15 +1,29 @@
 ---
 layout: landing
+showLogo: false
 ---
 
-import { HomePage } from 'vocs/components'
+import { HomePage } from "vocs/components";
+import { launch_url } from "../constants";
 
 <HomePage.Root>
-  <HomePage.Logo />
+  <img
+    src="/farville-icon.png"
+    alt="Farcaster Game"
+    className="w-24 h-24"
+  />
+  <HomePage.Logo className="!w-64 !h-8" />
   <HomePage.Tagline>A Farcaster Game</HomePage.Tagline>
-  <HomePage.Description>Plant, grow and harvest crop with your internet frens 🌱</HomePage.Description>
+  <HomePage.Description>
+    Plant, harvest, compete and earn with your internet frens 🌱
+  </HomePage.Description>
   <HomePage.Buttons>
-    <HomePage.Button href="/getting-started" variant="accent">Learn More</HomePage.Button>
-    <HomePage.Button href="https://warpcast.com/~/channel/farville">Play</HomePage.Button>
+    <HomePage.Button
+      href="/getting-started"
+      variant="accent"
+    >
+      Learn More
+    </HomePage.Button>
+    <HomePage.Button href={launch_url}>Play</HomePage.Button>
   </HomePage.Buttons>
 </HomePage.Root>
