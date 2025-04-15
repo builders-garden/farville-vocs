@@ -9,8 +9,8 @@ export default defineConfig({
     },
   ],
   title: "Farville Docs",
-  logoUrl: "./farville-title.png",
-  iconUrl: "./farville-icon.png",
+  logoUrl: "./img/farville-title.png",
+  iconUrl: "./img/farville-icon.png",
   sidebar: [
     {
       text: "Getting Started",
@@ -19,6 +19,18 @@ export default defineConfig({
     {
       text: "Gameplay",
       link: "/gameplay",
+    },
+    {
+      text: "Items & Progress",
+      link: "/items-and-progress",
+    },
+    {
+      text: "Collectibles",
+      link: "/collectibles",
+    },
+    {
+      text: "Community",
+      link: "/community",
     },
   ],
   topNav: [
