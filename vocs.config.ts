@@ -78,4 +78,8 @@ export default defineConfig({
       google: "Bricolage Grotesque",
     },
   },
+  description:
+    "Let’s dig deeper into the world of Farville and discover the secrets of the game.",
+  ogImageUrl:
+    "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
 });
